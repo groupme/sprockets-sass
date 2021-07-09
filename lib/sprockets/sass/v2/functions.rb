@@ -61,7 +61,7 @@ module Sprockets
         #   background: url(image-path("image.jpg", $digest: true)); // background: url("/assets/image-27a8f1f96afd8d4c67a59eb9447f45bd.jpg");
         #
         def image_path(source, options = {})
-          ::Sass::Script::String.new sprockets_context.image_path(source.value, map_options(options)).to_s, :string
+          ::Sass::Script::String.new sprockets_context.image_path(source.value).to_s, :string
         end
 
         # Using Sprockets::Helpers#image_path, return the url CSS
