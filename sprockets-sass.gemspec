@@ -17,9 +17,6 @@ Gem::Specification.new do |s|
   # usually the license needs to be specified in gemspec also as a standard
   s.licenses = ['MIT']
 
-  # This is needed so that on rubygems.org we can see the actual date
-  # of the published version due to changes in Rubygems repo over the last year(2015 - 2016)
-  s.date = Date.today
 
   # usually the platform needs to be specified also, to avoid people trying to install this gem on wrong platform
   s.platform = Gem::Platform::RUBY
